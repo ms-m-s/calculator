@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>
+        CALCULATOR
+    </h2>
+    <div class="container">
+        <div class="input">
+            <input id="input" type="text" placeholder="0" disabled>            
+        </div>
+        <div class="row1">
+            <button id="lp" class="btn" onclick="setInput(this)">(</button>
+            <button id="rp" class="btn" onclick="setInput(this)">)</button>
+            <button class="btnClear" onclick="clearInput()">AC</button>
+            <button class="btnBack" onclick="clearLastInput()">&larr;</button>
+        </div>
+        <div class="row2">
+            <button class="btn" onclick="setInput(this)">7</button>
+            <button class="btn" onclick="setInput(this)">8</button>
+            <button class="btn" onclick="setInput(this)">9</button>
+            <button id="x" class="btn" onclick="setInput(this)">&times;</button>
+        </div>
+        <div class="row3">
+            <button class="btn" onclick="setInput(this)">4</button>
+            <button class="btn" onclick="setInput(this)">5</button>
+            <button class="btn" onclick="setInput(this)">6</button>
+            <button id="minus" class="btn" onclick="setInput(this)">&minus;</button>
+        </div>
+        <div class="row3">
+            <button class="btn" onclick="setInput(this)">1</button>
+            <button class="btn" onclick="setInput(this)">2</button>
+            <button class="btn" onclick="setInput(this)">3</button>
+            <button id="plus" class="btn" onclick="setInput(this)">+</button>
+        </div>
+        <div class="row4">
+            <button class="btn" onclick="setInput(this)">0</button>
+            <button class="btn" onclick="setInput(this)">.</button>
+            <button id="divison" class="btn" onclick="setInput(this)">&divide;</button>
+            <button id="=" class="equal" onclick="calculate(input)">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
