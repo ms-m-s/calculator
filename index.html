@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
     <h1>
         CALCULATOR
-    </h2>
+    </h1>
     <div class="container">
         <div class="input">
-            <input id="input" type="text" placeholder="0" disabled>            
+            <input id="input" type="text" placeholder="0" disabled>
         </div>
         <div class="row1">
             <button id="lp" class="btn" onclick="setInput(this)">(</button>
@@ -48,7 +47,11 @@
             <button id="divison" class="btn" onclick="setInput(this)">&divide;</button>
             <button id="=" class="equal" onclick="calculate(input)">=</button>
         </div>
+        <div class="hidden">
+            <p id="hidden">0</p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
